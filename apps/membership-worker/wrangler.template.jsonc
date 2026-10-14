@@ -39,9 +39,18 @@
         }
       ],
       "services": [
-        // @cycle-break:membership-worker->policy-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiUE9MSUNZX1dPUktFUiIsCiAgICAgICAgICAic2VydmljZSI6ICJ0ZXN0LTEyOTgtcG9saWN5LXdvcmtlci1zdGFnZSIKICAgICAgICB9LA==
-        // @cycle-break:membership-worker->billing-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiQklMTElOR19XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAidGVzdC0xMjk4LWJpbGxpbmctd29ya2VyLXN0YWdlIgogICAgICAgIH0s
-        // @cycle-break:membership-worker->notifications-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiTk9USUZJQ0FUSU9OU19XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAidGVzdC0xMjk4LW5vdGlmaWNhdGlvbnMtd29ya2VyLXN0YWdlIgogICAgICAgIH0=
+        {
+          "binding": "POLICY_WORKER",
+          "service": "test-1298-policy-worker-stage"
+        },
+        {
+          "binding": "BILLING_WORKER",
+          "service": "test-1298-billing-worker-stage"
+        },
+        {
+          "binding": "NOTIFICATIONS_WORKER",
+          "service": "test-1298-notifications-worker-stage"
+        }
       ]
     },
     "prod": {
@@ -59,9 +68,18 @@
         }
       ],
       "services": [
-        // @cycle-break:membership-worker->policy-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiUE9MSUNZX1dPUktFUiIsCiAgICAgICAgICAic2VydmljZSI6ICJ0ZXN0LTEyOTgtcG9saWN5LXdvcmtlci1wcm9kIgogICAgICAgIH0s
-        // @cycle-break:membership-worker->billing-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiQklMTElOR19XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAidGVzdC0xMjk4LWJpbGxpbmctd29ya2VyLXByb2QiCiAgICAgICAgfSw=
-        // @cycle-break:membership-worker->notifications-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiTk9USUZJQ0FUSU9OU19XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAidGVzdC0xMjk4LW5vdGlmaWNhdGlvbnMtd29ya2VyLXByb2QiCiAgICAgICAgfQ==
+        {
+          "binding": "POLICY_WORKER",
+          "service": "test-1298-policy-worker-prod"
+        },
+        {
+          "binding": "BILLING_WORKER",
+          "service": "test-1298-billing-worker-prod"
+        },
+        {
+          "binding": "NOTIFICATIONS_WORKER",
+          "service": "test-1298-notifications-worker-prod"
+        }
       ]
     }
   }

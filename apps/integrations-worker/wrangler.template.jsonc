@@ -42,10 +42,22 @@
         }
       ],
       "services": [
-        // @cycle-break:integrations-worker->membership-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiTUVNQkVSU0hJUF9XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAidGVzdC0xMjk4LW1lbWJlcnNoaXAtd29ya2VyLXN0YWdlIgogICAgICAgIH0s
-        // @cycle-break:integrations-worker->policy-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiUE9MSUNZX1dPUktFUiIsCiAgICAgICAgICAic2VydmljZSI6ICJ0ZXN0LTEyOTgtcG9saWN5LXdvcmtlci1zdGFnZSIKICAgICAgICB9LA==
-        // @cycle-break:integrations-worker->billing-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiQklMTElOR19XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAidGVzdC0xMjk4LWJpbGxpbmctd29ya2VyLXN0YWdlIgogICAgICAgIH0s
-        // @cycle-break:integrations-worker->projects-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiUFJPSkVDVFNfV09SS0VSIiwKICAgICAgICAgICJzZXJ2aWNlIjogInRlc3QtMTI5OC1wcm9qZWN0cy13b3JrZXItc3RhZ2UiCiAgICAgICAgfQ==
+        {
+          "binding": "MEMBERSHIP_WORKER",
+          "service": "test-1298-membership-worker-stage"
+        },
+        {
+          "binding": "POLICY_WORKER",
+          "service": "test-1298-policy-worker-stage"
+        },
+        {
+          "binding": "BILLING_WORKER",
+          "service": "test-1298-billing-worker-stage"
+        },
+        {
+          "binding": "PROJECTS_WORKER",
+          "service": "test-1298-projects-worker-stage"
+        }
       ]
     },
     "prod": {
@@ -62,10 +74,22 @@
         }
       ],
       "services": [
-        // @cycle-break:integrations-worker->membership-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiTUVNQkVSU0hJUF9XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAidGVzdC0xMjk4LW1lbWJlcnNoaXAtd29ya2VyLXByb2QiCiAgICAgICAgfSw=
-        // @cycle-break:integrations-worker->policy-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiUE9MSUNZX1dPUktFUiIsCiAgICAgICAgICAic2VydmljZSI6ICJ0ZXN0LTEyOTgtcG9saWN5LXdvcmtlci1wcm9kIgogICAgICAgIH0s
-        // @cycle-break:integrations-worker->billing-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiQklMTElOR19XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAidGVzdC0xMjk4LWJpbGxpbmctd29ya2VyLXByb2QiCiAgICAgICAgfSw=
-        // @cycle-break:integrations-worker->projects-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiUFJPSkVDVFNfV09SS0VSIiwKICAgICAgICAgICJzZXJ2aWNlIjogInRlc3QtMTI5OC1wcm9qZWN0cy13b3JrZXItcHJvZCIKICAgICAgICB9
+        {
+          "binding": "MEMBERSHIP_WORKER",
+          "service": "test-1298-membership-worker-prod"
+        },
+        {
+          "binding": "POLICY_WORKER",
+          "service": "test-1298-policy-worker-prod"
+        },
+        {
+          "binding": "BILLING_WORKER",
+          "service": "test-1298-billing-worker-prod"
+        },
+        {
+          "binding": "PROJECTS_WORKER",
+          "service": "test-1298-projects-worker-prod"
+        }
       ]
     }
   }
