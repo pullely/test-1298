@@ -1,0 +1,11 @@
+{
+  "reponame": "test-1298",
+  "productname": "Test1298",
+  "productdomain": "test1298.dev",
+  "apibaseurl": "https://api.test1298.dev",
+  "subdomain": "rahulvarghesepullely",
+  "orunWorkspace": "org_53839db84e1744348221f89370b84f1f",
+  "githuborg": "pullely",
+  "epicSlug": "infra-baselining",
+  "domain": false
+}
